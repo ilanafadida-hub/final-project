@@ -1,0 +1,145 @@
+{
+  "version": "1.0",
+  "created_at": "2026-03-10T23:36:42.706322",
+  "source_file": "data/raw/online_retail_II.csv",
+  "cleaned_file": "outputs/clean_data.csv",
+  "row_count": 779425,
+  "column_count": 8,
+  "columns": {
+    "Invoice": {
+      "dtype": "int64",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "min": 489434.0,
+      "max": 581587.0,
+      "mean": 537426.8286,
+      "sample_values": [
+        489434.0,
+        489434.0,
+        489434.0,
+        489434.0,
+        489434.0
+      ]
+    },
+    "StockCode": {
+      "dtype": "object",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "unique_count": 4631,
+      "sample_values": [
+        "85123A",
+        "22423",
+        "85099B",
+        "84879",
+        "20725"
+      ],
+      "min": null,
+      "max": null
+    },
+    "Description": {
+      "dtype": "object",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "unique_count": 5283,
+      "sample_values": [
+        "WHITE HANGING HEART T-LIGHT HOLDER",
+        "REGENCY CAKESTAND 3 TIER",
+        "ASSORTED COLOUR BIRD ORNAMENT",
+        "JUMBO BAG RED RETROSPOT",
+        "PARTY BUNTING"
+      ],
+      "min": null,
+      "max": null
+    },
+    "Quantity": {
+      "dtype": "int64",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "min": 1.0,
+      "max": 80995.0,
+      "mean": 13.4894,
+      "sample_values": [
+        12.0,
+        12.0,
+        12.0,
+        48.0,
+        24.0
+      ]
+    },
+    "InvoiceDate": {
+      "dtype": "datetime64[ns]",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "min": "2009-12-01 07:45:00",
+      "max": "2011-12-09 12:50:00",
+      "sample_values": [
+        "2009-12-01 07:45:00",
+        "2009-12-01 07:45:00",
+        "2009-12-01 07:45:00",
+        "2009-12-01 07:45:00",
+        "2009-12-01 07:45:00"
+      ]
+    },
+    "Price": {
+      "dtype": "float64",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "min": 0.001,
+      "max": 10953.5,
+      "mean": 3.2185,
+      "sample_values": [
+        6.95,
+        6.75,
+        6.75,
+        2.1,
+        1.25
+      ]
+    },
+    "Customer ID": {
+      "dtype": "int64",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "min": 12346.0,
+      "max": 18287.0,
+      "mean": 15320.3605,
+      "sample_values": [
+        13085.0,
+        13085.0,
+        13085.0,
+        13085.0,
+        13085.0
+      ]
+    },
+    "Country": {
+      "dtype": "object",
+      "nullable": false,
+      "null_count": 0,
+      "null_rate": 0.0,
+      "unique_count": 41,
+      "sample_values": [
+        "United Kingdom",
+        "Germany",
+        "EIRE",
+        "France",
+        "Netherlands"
+      ],
+      "min": null,
+      "max": null
+    }
+  },
+  "constraints": [
+    "Quantity > 0",
+    "Price > 0",
+    "Invoice does NOT start with 'C' (no cancellations)",
+    "Customer ID is not null and is a non-negative integer",
+    "InvoiceDate is a valid datetime",
+    "No duplicate rows"
+  ]
+}
