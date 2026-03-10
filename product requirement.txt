@@ -1,0 +1,78 @@
+Final Project  
+Final Project: Industry-Simulated AI Product Workflow 
+AI Development & Collaboration Project  
+Using CrewAI, GitHub, Flask, Streamlit 
+1. Business Background 
+A retail-tech company is scaling its data and AI capabilities. They collect large volumes 
+of sales, customer, and product data and want to operationalize AI models in a 
+reproducible, team-friendly way. 
+Management requires two distinct perspectives: 
+1. Business & Descriptive Understanding 
+→ “What has happened in the business?” 
+2. Predictive Modeling 
+→ “What is likely to happen next?” 
+Your task is to simulate how real AI product teams collaborate in industry to turn data 
+into deployable insight and predictive intelligence. 
+2. High-Level Mission 
+Your team (up to 5 students) must design and implement a CrewAI Flow coordinating 
+two separate multi-agent teams: 
+Crew 1 — Data Analyst Crew (at least 3 agents) 
+Responsibilities 
+• Ingest and validate a dataset chosen freely (Kaggle or public open data). 
+• Clean, preprocess, and document the dataset. 
+• Perform descriptive analytics and exploratory data analysis. 
+• Produce visual insights and business summaries. 
+• Define a dataset contract that the Data Scientist crew must follow. 
+Required Outputs 
+• clean_data.csv 
+• eda_report.html 
+• insights.md 
+• dataset_contract.json 
+(schema, allowed values, assumptions, constraints) 
+Crew 2 — Data Scientist Crew (at least 3 agents) 
+Responsibilities 
+• Read and validate the cleaned dataset + the dataset contract. 
+• Perform feature engineering. 
+• Train at least one predictive model. 
+• Evaluate comparisons between at least 2 model variations. 
+• Produce a model card describing: 
+o Model purpose 
+o Training data summary 
+o Metrics 
+o Limitations 
+o Ethical considerations 
+Required Outputs 
+• features.csv 
+• model.pkl (or .joblib) 
+• evaluation_report.md 
+• model_card.md 
+CrewAI Flow Requirements 
+Your Flow must: 
+1. Automate handoff from Data Analyst Crew → Data Scientist Crew. 
+2. Include validation steps, such as: 
+o Confirm the dataset_contract matches the cleaned dataset. 
+o Confirm all required features exist before modeling. 
+3. Support reproducibility: 
+o Deterministic steps 
+o Clear logging 
+o Artifacts saved inside the repo 
+4. Fail gracefully when validations break. 
+Required Tech Stack 
+Your team must use: 
+Core Requirements 
+✔ CrewAI 
+✔ Python 
+✔ Git + GitHub (with Pull Requests) 
+✔ Streamlit or Flask (or both) 
+✔ Pandas, Scikit-Learn, Matplotlib/Seaborn 
+Optional Deployment (recommended): 
+• Streamlit Cloud 
+• Railway  
+Alternative Path 
+If your group does not want to build the connected Flow, you may submit a 1-page 
+project proposal (problem, dataset, method, expected output). This must be approved 
+before you begin. 
+Final Deliverables 
+• Repository source code, artifacts, and documentation. 
+• Business presentation (10–12 slides) or demo. 
+• Short demo video (≤5 min). 

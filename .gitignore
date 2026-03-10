@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# Virtual Environment
+.env
+*.env
+venv/
+env/
+.venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model artifacts (large files)
+*.pkl
+*.joblib
+
+# Secrets
+*.env
+.env.*
+secrets.json
